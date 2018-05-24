@@ -77,8 +77,9 @@
                             <p>Consulta dos eventos
                                 <br> existentes para curso de TSIW</p>
                         </div>
+                        <!-- IDEIA - Quando se fizer mouseover nos icones, mudam para as respetivas cores (Javascript?) -->
                         <div class="col-2 text-center">
-                            <i class="d-block far fa-eye fa-3x"></i>
+                            <i style="color:lightskyblue" class="d-block far fa-eye fa-3x"></i>
                         </div>
                     </div>
                     <div class="row my-5">
@@ -87,14 +88,14 @@
                             <p></p>
                         </div>
                         <div class="col-2 text-center">
-                            <i class="d-block mx-auto far fa-comments fa-3x"></i>
+                            <i style="color:lightsalmon" class="d-block mx-auto far fa-comments fa-3x"></i>
                         </div>
                     </div>
                 </div>
                 <div class="text-left col-md-6">
                     <div class="row my-5">
                         <div class="col-2 text-center">
-                            <i class="d-block far fa-calendar-plus fa-3x"></i>
+                            <i  style="color:lightcoral" class="d-block far fa-calendar-plus fa-3x"></i>
                         </div>
                         <div class="col-10">
                             <h4 class="text-cabecalho">Criação de Eventos</h4>
@@ -106,12 +107,18 @@
                     </div>
                     <div class="row my-5">
                         <div class="col-2 text-center">
-                            <i class="d-block mx-auto far fa-star fa-3x"></i>
+                            <i style="color:#F2D62C" class="d-block mx-auto far fa-star fa-3x"></i>
                         </div>
                         <div class="col-10">
                             <h4 class="text-cabecalho">Pontuação de eventos</h4>
-                            <p>Mais funcionalidades</p>
+                            
                         </div>
+                        <div class="col-md-12 text-left">
+                            <p></p>
+                            <p></p>
+                            <br>
+                            <h4 class ="text-cabecalho" style="margin-left: -90px" >e muito mais...<h4>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -126,12 +133,6 @@
                     <h2 class="mb-4 text-cabecalho">ESMAD</h2>
                     <p class="text-white">
                         <img src="../Imagens/152656752219674327.png" style="margin-left: -100px" height="100%" width="100%">
-                    </p>
-                </div>
-                <div class="p-4 col-md-4">
-                    <h2 class="mb-4 text-cabecalho">Ainda não sei</h2>
-                    <p>
-                        
                     </p>
                 </div>
                 <div class="p-4 col-md-4">
@@ -151,6 +152,27 @@
                             <br>&nbsp; &nbsp; &nbsp; Portugal</a>
                     </p>
                 </div>
+                <div class="p-4 col-md-4">
+                    <h2 class="mb-4 text-cabecalho">Localização</h2>
+                    <p>
+                        <div id="myMap" style="width:250px; height:250px">
+                            <script>
+                                let map
+                                let myMap = document.getElementById('myMap')
+                                function initMap() {
+                                let mapProp = {
+                                    center: new google.maps.LatLng(41.366287, -8.739071),
+                                    zoom: 15
+                                    }
+                                map = new google.maps.Map(myMap, mapProp)
+                                }
+                            </script>
+                            <script src
+                            =“https://maps.googleapis.com/maps/api/js?key=AIzaSyCdVlv_VFDvE7iG8kKmCzkc6jhYBVFZR5Q&callback=initMap” async></script>
+                        </div> 
+                    </p>
+                </div>
+                
             </div>
             <div class="row">
                 <div class="col-md-12 mt-3">
